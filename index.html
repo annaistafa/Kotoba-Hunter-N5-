@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 語彙リスト (Kotoba N5 Lengkap)</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --container-bg: #ffffff;
+            --primary-color: #2c3e50;
+            --accent-color: #16a085;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --hover-bg: #f9fbfb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .search-box input {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        th:first-child { border-top-left-radius: 4px; }
+        th:last-child { border-top-right-radius: 4px; }
+
+        tr:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .category {
+            font-size: 12px;
+            background-color: #e8f8f5;
+            color: var(--accent-color);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .kanji {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .furigana {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .romaji {
+            font-size: 14px;
+            color: #d35400;
+            font-style: italic;
+        }
+
+        .arti {
+            font-size: 15px;
+            font-weight: 500;
+            color: #27ae60;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+            .kanji { font-size: 16px; }
+            header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>JLPT N5 Vocabulary List (Lengkap)</h1>
+        <p>Kumpulan Kosakata Bahasa Jepang N5 Hasil Penggabungan Materi</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Cari kata, kategori, atau arti...">
+    </div>
+
+    <table id="vocabTable">
+        <thead>
+            <tr>
+                <th>Kategori</th>
+                <th>Kanji</th>
+                <th>Furigana</th>
+                <th>Romaji</th>
+                <th>Arti (Bahasa Indonesia)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Kategori: Tempat & Arah -->
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">家</td><td class="furigana">うち / いえ</td><td class="romaji">uchi / ie</td><td class="arti">Rumah</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">部屋</td><td class="furigana">へや</td><td class="romaji">heya</td><td class="arti">Kamar</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">学校</td><td class="furigana">がっこう</td><td class="romaji">gakkou</td><td class="arti">Sekolah</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">教室</td><td class="furigana">きょうしつ</td><td class="romaji">kyoushitsu</td><td class="arti">Kelas</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">食堂</td><td class="furigana">しょくどう</td><td class="romaji">shokudou</td><td class="arti">Kantin / Ruang makan</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">会社</td><td class="furigana">かいしゃ</td><td class="romaji">kaisha</td><td class="arti">Perusahaan</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">駅</td><td class="furigana">えき</td><td class="romaji">eki</td><td class="arti">Stasiun</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">銀行</td><td class="furigana">ぎんこう</td><td class="romaji">ginkou</td><td class="arti">Bank</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">病院</td><td class="furigana">びょういん</td><td class="romaji">byouin</td><td class="arti">Rumah Sakit</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">北</td><td class="furigana">きた</td><td class="romaji">kita</td><td class="arti">Utara</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">南</td><td class="furigana">みなみ</td><td class="romaji">minami</td><td class="arti">Selatan</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">東</td><td class="furigana">ひがし</td><td class="romaji">higashi</td><td class="arti">Timur</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">西</td><td class="furigana">にし</td><td class="romaji">nishi</td><td class="arti">Barat</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">上</td><td class="furigana">うえ</td><td class="romaji">ue</td><td class="arti">Atas</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">下</td><td class="furigana">した</td><td class="romaji">shita</td><td class="arti">Bawah</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">前</td><td class="furigana">まえ</td><td class="romaji">mae</td><td class="arti">Depan</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">後ろ</td><td class="furigana">うしろ</td><td class="romaji">ushiro</td><td class="arti">Belakang</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">中</td><td class="furigana">なか</td><td class="romaji">naka</td><td class="arti">Dalam</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">外</td><td class="furigana">そと</td><td class="romaji">soto</td><td class="arti">Luar</td></tr>
+            <tr><td><span class="category">Tempat & Arah</span></td><td class="kanji">隣</td><td class="furigana">となり</td><td class="romaji">tonari</td><td class="arti">Sebelah / Samping</td></tr>
+
+            <!-- Kategori: Kata Ganti & Kata Tanya -->
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">私</td><td class="furigana">わたし</td><td class="romaji">watashi</td><td class="arti">Saya</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">あなた</td><td class="furigana">あなた</td><td class="romaji">anata</td><td class="arti">Anda / Kamu</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">これ</td><td class="furigana">これ</td><td class="romaji">kore</td><td class="arti">Ini (dekat pembicara)</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">それ</td><td class="furigana">それ</td><td class="romaji">sore</td><td class="arti">Itu (dekat lawan bicara)</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">あれ</td><td class="furigana">あれ</td><td class="romaji">are</td><td class="arti">Itu (jauh dari keduanya)</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">何</td><td class="furigana">なに / なん</td><td class="romaji">nani / nan</td><td class="arti">Apa</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">だれ</td><td class="furigana">だれ</td><td class="romaji">dare</td><td class="arti">Siapa</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">いつ</td><td class="furigana">いつ</td><td class="romaji">itsu</td><td class="arti">Kapan</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">どこ</td><td class="furigana">どこ</td><td class="romaji">doko</td><td class="arti">Di mana</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">どうして</td><td class="furigana">どうして</td><td class="romaji">doushite</td><td class="arti">Mengapa / Kenapa</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">いかが / どう</td><td class="furigana">いかが / どう</td><td class="romaji">ikaga / dou</td><td class="arti">Bagaimana</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">いくら</td><td class="furigana">いくら</td><td class="romaji">ikura</td><td class="arti">Berapa harganya</td></tr>
+            <tr><td><span class="category">Kata Ganti / Tanya</span></td><td class="kanji">いくつ</td><td class="furigana">いくつ</td><td class="romaji">ikutsu</td><td class="arti">Berapa banyak / Berapa umur</td></tr>
+
+            <!-- Kategori: Makanan & Minuman -->
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">ご飯</td><td class="furigana">ごはん</td><td class="romaji">gohan</td><td class="arti">Nasi / Makanan</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">朝御飯</td><td class="furigana">あさごはん</td><td class="romaji">asagohan</td><td class="arti">Sarapan</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">昼御飯</td><td class="furigana">ひるごはん</td><td class="romaji">hirugohan</td><td class="arti">Makan siang</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">晩御飯</td><td class="furigana">ばんごはん</td><td class="romaji">bangohan</td><td class="arti">Makan malam</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">水</td><td class="furigana">みず</td><td class="romaji">mizu</td><td class="arti">Air</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">お茶</td><td class="furigana">おちゃ</td><td class="romaji">ocha</td><td class="arti">Teh Jepang (Teh hijau)</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">牛乳</td><td class="furigana">ぎゅうにゅう</td><td class="romaji">gyuunyuu</td><td class="arti">Susu sapi</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">お酒</td><td class="furigana">おさけ</td><td class="romaji">osake</td><td class="arti">Sake / Alkohol</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">肉</td><td class="furigana">にく</td><td class="romaji">niku</td><td class="arti">Daging</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">魚</td><td class="furigana">さかな</td><td class="romaji">sakana</td><td class="arti">Ikan</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">野菜</td><td class="furigana">やさい</td><td class="romaji">yasai</td><td class="arti">Sayur</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">果物</td><td class="furigana">くだもの</td><td class="romaji">kudamono</td><td class="arti">Buah</td></tr>
+            <tr><td><span class="category">Makanan & Minuman</span></td><td class="kanji">パン</td><td class="furigana">ぱん</td><td class="romaji">pan</td><td class="arti">Roti</td></tr>
+
+            <!-- Kategori: Waktu -->
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">今</td><td class="furigana">いま</td><td class="romaji">ima</td><td class="arti">Sekarang</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">今日</td><td class="furigana">きょう</td><td class="romaji">kyou</td><td class="arti">Hari ini</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">明日</td><td class="furigana">あした</td><td class="romaji">ashita</td><td class="arti">Besok</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">昨日</td><td class="furigana">きのう</td><td class="romaji">kinou</td><td class="arti">Kemarin</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">毎日</td><td class="furigana">まいにち</td><td class="romaji">mainichi</td><td class="arti">Setiap hari</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">今週</td><td class="furigana">こんしゅう</td><td class="romaji">konshuu</td><td class="arti">Minggu ini</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">来週</td><td class="furigana">らいしゅう</td><td class="romaji">raishuu</td><td class="arti">Minggu depan</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">先週</td><td class="furigana">せんしゅう</td><td class="romaji">senshuu</td><td class="arti">Minggu lalu</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">今月</td><td class="furigana">こんげつ</td><td class="romaji">kongetsu</td><td class="arti">Bulan ini</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">来月</td><td class="furigana">らいげつ</td><td class="romaji">raigetsu</td><td class="arti">Bulan depan</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">先月</td><td class="furigana">せんげつ</td><td class="romaji">sengetsu</td><td class="arti">Bulan lalu</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">今年</td><td class="furigana">ことし</td><td class="romaji">kotoshi</td><td class="arti">Tahun ini</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">来年</td><td class="furigana">らいねん</td><td class="romaji">rainen</td><td class="arti">Tahun depan</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">去年</td><td class="furigana">きょねん</td><td class="romaji">kyonen</td><td class="arti">Tahun lalu</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">朝</td><td class="furigana">あさ</td><td class="romaji">asa</td><td class="arti">Pagi</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">昼</td><td class="furigana">ひる</td><td class="romaji">hiru</td><td class="arti">Siang</td></tr>
+            <tr><td><span class="category">Waktu</span></td><td class="kanji">晩 / 夜</td><td class="furigana">ばん / よる</td><td class="romaji">ban / yoru</td><td class="arti">Malam</td></tr>
+
+            <!-- Kategori: Kata Sifat-i -->
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">大きい</td><td class="furigana">おおきい</td><td class="romaji">ookii</td><td class="arti">Besar</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">小さい</td><td class="furigana">ちいさい</td><td class="romaji">chiisai</td><td class="arti">Kecil</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">高い</td><td class="furigana">たかい</td><td class="romaji">takai</td><td class="arti">Mahal / Tinggi</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">安い</td><td class="furigana">やすい</td><td class="romaji">yasui</td><td class="arti">Murah</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">新しい</td><td class="furigana">あたらしい</td><td class="romaji">atarashii</td><td class="arti">Baru</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">古い</td><td class="furigana">ふるい</td><td class="romaji">furui</td><td class="arti">Tua / Lama (benda)</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">いい / 良い</td><td class="furigana">いい / よい</td><td class="romaji">ii / yoi</td><td class="arti">Bagus / Baik</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">悪い</td><td class="furigana">わるい</td><td class="romaji">walui</td><td class="arti">Buruk / Jelek</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">暑い</td><td class="furigana">あつい</td><td class="romaji">atsui</td><td class="arti">Panas (cuaca)</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">寒い</td><td class="furigana">さむい</td><td class="romaji">samui</td><td class="arti">Dingin (cuaca)</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">冷たい</td><td class="furigana">つめたい</td><td class="romaji">tsumetai</td><td class="arti">Dingin (benda/sifat)</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">難しい</td><td class="furigana">むずかしい</td><td class="romaji">muzukashii</td><td class="arti">Sulit</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">易しい</td><td class="furigana">やさしい</td><td class="romaji">yasashii</td><td class="arti">Mudah</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">面白い</td><td class="furigana">おもしろい</td><td class="romaji">omoshiroi</td><td class="arti">Menarik / Lucu</td></tr>
+            <tr><td><span class="category">Kata Sifat-i</span></td><td class="kanji">美味しい</td><td class="furigana">おいしい</td><td class="romaji">oishii</td><td class="arti">Enak / Lezat</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+function searchTable() {
+    var input, filter, table, tr, td, i, j, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("vocabTable");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 1; i < tr.length; i++) {
+        tr[i].style.display = "none";
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j]) {
+                txtValue = td[j].textContent || td[j].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                    break;
+                }
+            }
+        }
+    }
+}
+</script>
+
+</body>
+</html>
